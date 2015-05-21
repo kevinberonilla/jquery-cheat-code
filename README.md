@@ -1,8 +1,10 @@
 # jquery-cheatcode
 Add a keypress cheat code that calls a specified function on your website.
+
 ---
 #### Requirements
 jQuery 1.2.6 or higher
+
 ---
 #### Installation
 To install jquery-cheatcode, move the provided JS files to your site and include them in the `<head>` tag AFTER jQuery
@@ -12,6 +14,7 @@ To install jquery-cheatcode, move the provided JS files to your site and include
     <script src="js/jquery-cheatcode.js"></script>
 </head>
 ```
+
 ---
 #### Call the Script
 ```
@@ -36,6 +39,7 @@ A string of key codes without spaces representing your cheat code (default value
 The amount of time in milliseconds allowed between sequential key presses before the input is reset
 ###### callback
 The function that fires when the cheat code is successfully executed (can be a pre-defined function within scope)
+
 ---
 #### Useful Tools
 You can use <a href="https://css-tricks.com/snippets/javascript/javascript-keycodes/">this page</a> to help you determine the key codes for your code string.
