@@ -6,7 +6,7 @@
 			code: '38384040373937396665',
 			time: 500,
             callback: function() { alert('Cheat activated!'); }
-        }, options);
+		}, options);
 		
 		function checkInput() {
 			if (input == settings.code) {
