@@ -23,5 +23,15 @@ $(document).ready(function() {
 ```
 
 #### Play with Settings
+```
+$(document).ready(function() {
+    $('document').cheatcode({
+        code: '38384040373937396665', // A string of key codes without spaces representing your cheat code (default value is the Konami code sans Start button)
+        time: 500, // The amount of time in milliseconds allowed between sequential key presses before the input is reset
+        callback: function() { alert('Cheat code activated!'); // The function that fires when the cheat code is successfully executed (can be a pre-defined function within scope)
+    });
+});
+```
 
-Coming soon!
+#### Useful Tools
+You can use <a href="https://css-tricks.com/snippets/javascript/javascript-keycodes/">this page</a> for determining your code string.
