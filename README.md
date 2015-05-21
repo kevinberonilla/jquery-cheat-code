@@ -3,10 +3,10 @@ Add a keypress cheat code that calls a specified function on your website.
 
 ###### Under Construction!
 
-### Requirements
+#### Requirements
 jQuery 1.2.6 or higher
 
-### Installation
+#### Installation
 To install jquery-cheatcode, move the provided JS files to your site and include them in the `<head>` tag AFTER jQuery
 ```
 <head>
@@ -15,13 +15,13 @@ To install jquery-cheatcode, move the provided JS files to your site and include
 </head>
 ```
 
-### Call the Script
+#### Call the Script
 ```
 $(document).ready(function() {
     $('document').cheatcode();
 });
 ```
 
-## Play with Settings
+#### Play with Settings
 
 Coming soon!
