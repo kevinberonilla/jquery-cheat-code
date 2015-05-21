@@ -37,14 +37,14 @@ $(document).ready(function() {
     });
 });
 ```
-**code**
+**code**  
 A string of key codes without spaces representing your cheat code (default value is the Konami code sans Start button)
 
-**time**
+**time**  
 The amount of time in milliseconds allowed between sequential key presses before the input is reset
 
-**callback** 
-he function that fires when the cheat code is successfully executed (can be a pre-defined function within scope)
+**callback**   
+The function that fires when the cheat code is successfully executed (can be a pre-defined function within scope)
 
 ---
 
