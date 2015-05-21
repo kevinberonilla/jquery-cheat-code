@@ -5,7 +5,7 @@
 		settings = $.extend({
 			code: '38384040373937396665',
 			time: 500,
-			callback: function() { alert('Cheat code activated!'); }
+			callback: function() { alert('Invincibility enabled!'); }
 		}, options);
 		
 		function checkInput() {
@@ -17,7 +17,7 @@
 		this.keyup(function(e) {
 			input += e.which;
 			clearTimeout(timer);
-			timer = setTimeout(function() { input = ""; }, settings.time);
+			timer = setTimeout(function() { input = ''; }, settings.time);
 			checkInput();
 		});
 		
