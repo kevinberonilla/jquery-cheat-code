@@ -9,7 +9,7 @@ jQuery 1.2.6 or higher
 ---
 
 #### Installation
-To install jquery-cheatcode, move the provided JS files to your site and include them in the `<head>` tag AFTER jQuery
+Copy the provided JS files to your site and include them in the `<head>` tag after jQuery
 ```
 <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
