@@ -5,7 +5,7 @@
 		settings = $.extend({
 			code: '38384040373937396665',
 			time: 500,
-			callback: function() { alert('Cheat activated!'); }
+			callback: function() { alert('Cheat code activated!'); }
 		}, options);
 		
 		function checkInput() {
@@ -20,5 +20,7 @@
 			timer = setTimeout(function() { input = ""; }, settings.time);
 			checkInput();
 		});
+		
+		return this;
 	}
 }(jQuery));
