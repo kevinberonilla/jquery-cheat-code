@@ -11,7 +11,7 @@ To install jquery-cheatcode, move the provided JS files to your site and include
 ```
 <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="js/jquery-cheatcode.min.js"></script>
+    <script src="js/jquery-cheatcode.js"></script>
 </head>
 ```
 
