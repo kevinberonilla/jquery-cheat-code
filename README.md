@@ -18,10 +18,10 @@ To install jquery-cheatcode, move the provided JS files to your site and include
 ### Call the Script
 ```
 $(document).ready(function() {
-    $('document).cheatcode();
+    $('document').cheatcode();
 });
 ```
 
-## Play wih Settings
+## Play with Settings
 
 Coming soon!
