@@ -1,11 +1,9 @@
 # jquery-cheatcode
 Add a keypress cheat code that calls a specified function on your website.
-
-###### Under Construction!
-
+---
 #### Requirements
 jQuery 1.2.6 or higher
-
+---
 #### Installation
 To install jquery-cheatcode, move the provided JS files to your site and include them in the `<head>` tag AFTER jQuery
 ```
@@ -14,24 +12,30 @@ To install jquery-cheatcode, move the provided JS files to your site and include
     <script src="js/jquery-cheatcode.js"></script>
 </head>
 ```
-
+---
 #### Call the Script
 ```
 $(document).ready(function() {
     $('document').cheatcode();
 });
 ```
-
+---
 #### Play with Settings
 ```
 $(document).ready(function() {
     $('document').cheatcode({
-        code: '38384040373937396665', // A string of key codes without spaces representing your cheat code (default value is the Konami code sans Start button)
-        time: 500, // The amount of time in milliseconds allowed between sequential key presses before the input is reset
-        callback: function() { alert('Cheat code activated!'); // The function that fires when the cheat code is successfully executed (can be a pre-defined function within scope)
+        code: '38384040373937396665',
+        time: 500,
+        callback: function() { alert('Cheat code activated!');
     });
 });
 ```
-
+###### code
+A string of key codes without spaces representing your cheat code (default value is the Konami code sans Start button)
+###### time
+The amount of time in milliseconds allowed between sequential key presses before the input is reset
+###### callback
+The function that fires when the cheat code is successfully executed (can be a pre-defined function within scope)
+---
 #### Useful Tools
-You can use <a href="https://css-tricks.com/snippets/javascript/javascript-keycodes/">this page</a> for determining your code string.
+You can use <a href="https://css-tricks.com/snippets/javascript/javascript-keycodes/">this page</a> to help you determine the key codes for your code string.
