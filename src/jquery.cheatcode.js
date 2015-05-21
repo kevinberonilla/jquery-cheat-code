@@ -15,7 +15,7 @@
 		}
 		
 		this.keyup(function(e) {
-			input += e.which;    
+			input += e.which;
 			clearTimeout(timer);
 			timer = setTimeout(function() { input = ""; }, settings.time);
 			checkInput();
