@@ -23,7 +23,7 @@ Copy the provided JS files to your site and include them in the `<head>` tag aft
 #### Call the Script
 ```
 $(document).ready(function() {
-    $('document').cheatcode();
+    $(document).cheatcode();
 });
 ```
 ---
@@ -31,7 +31,7 @@ $(document).ready(function() {
 #### Play with Settings
 ```
 $(document).ready(function() {
-    $('document').cheatcode({
+    $(document).cheatcode({
         code: '38384040373937396665',
         time: 500,
         callback: function() { alert('Invincibility enabled!'); }
