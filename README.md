@@ -1,5 +1,6 @@
 # jquery-cheatcode
 Add a keypress cheat code that calls a specified function on your website.
+<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Konami_Code.svg/800px-Konami_Code.svg.png" style="width: 100%; height: auto;">
 
 ---
 
@@ -13,7 +14,7 @@ Copy the provided JS files to your site and include them in the `<head>` tag aft
 ```
 <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="js/jquery-cheatcode.js"></script>
+    <script src="js/jquery-cheatcode.min.js"></script>
 </head>
 ```
 
