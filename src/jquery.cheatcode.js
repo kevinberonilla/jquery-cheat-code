@@ -1,3 +1,12 @@
+/* --------------------------------------------------
+jQuery Cheatcode v1.00
+
+By Kevin Beronilla
+http://www.kevinberonilla.com
+
+Fork on GitHub
+https://github.com/kevinberonilla/jquery-cheatcode
+-------------------------------------------------- */
 (function ($) {
 	$.fn.cheatcode = function(options) {
 		var timer,
