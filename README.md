@@ -1,5 +1,5 @@
 # jquery-cheatcode
-<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Konami_Code.svg/800px-Konami_Code.svg.png" style="width: 100%; height: auto;">
+<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Konami_Code.svg/800px-Konami_Code.svg.png" style="width: 100%; height: auto;">  
 Add a keypress cheat code that calls a specified function on your website.
 
 ---
