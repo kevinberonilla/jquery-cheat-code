@@ -9,7 +9,7 @@ https://github.com/kevinberonilla/jquery-cheatcode
 -------------------------------------------------- */
 (function ($) { // Protect the $ alias (IIF)
 	$.fn.cheatcode = function(options) {
-		var timer,
+        var timer,
             input = '',
             settings = $.extend({ // Extend the default settings
                 code: '38384040373937396665',
