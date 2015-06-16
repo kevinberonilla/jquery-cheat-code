@@ -17,19 +17,19 @@ https://github.com/kevinberonilla/jquery-cheatcode
                 callback: function() { alert('Invincibility enabled!'); }
             }, options);
         
-		function checkInput() {
-			if (input == settings.code) {
-				settings.callback.call(this); // Call the callback
-			}
-		}
+        function checkInput() {
+            if (input == settings.code) {
+                settings.callback.call(this); // Call the callback
+            }
+        }
         
-		this.keyup(function(e) {
-			input += e.which; // Add the pressed key code
-			clearTimeout(timer);
-			timer = setTimeout(function() { input = ''; }, settings.time); // Clear the input if time runs out
-			checkInput();
-		});
+        this.keyup(function(e) {
+            input += e.which; // Add the pressed key code
+            clearTimeout(timer);
+            timer = setTimeout(function() { input = ''; }, settings.time); // Clear the input if time runs out
+            checkInput();
+        });
         
-		return this; // Return the object to enable chaining
-	}
+        return this; // Return the object to enable chaining
+    }
 }(jQuery));
