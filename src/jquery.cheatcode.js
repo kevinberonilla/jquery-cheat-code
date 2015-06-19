@@ -11,7 +11,7 @@ https://github.com/kevinberonilla/jquery-cheatcode
     $.fn.cheatcode = function(options) {
         var timer,
             input = '',
-            settings = $.extend({ // Extend the default settings
+            settings = $.extend({ // Extend the default settings established below
                 code: '38384040373937396665',
                 time: 500,
                 callback: function() { alert('Invincibility enabled!'); }
