@@ -7,7 +7,7 @@ http://www.kevinberonilla.com
 Fork on GitHub
 https://github.com/kevinberonilla/jquery-cheatcode
 -------------------------------------------------- */
-(function ($) { // Protect the $ alias (IIF)
+(function($) { // Protect the $ alias (IIF)
     $.fn.cheatcode = function(options) {
         var timer,
             input = '',
