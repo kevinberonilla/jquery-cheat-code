@@ -1,5 +1,5 @@
 /* --------------------------------------------------
-jQuery Cheatcode v1.00
+jQuery Cheat Code v1.02
 
 By Kevin Beronilla
 http://www.kevinberonilla.com
