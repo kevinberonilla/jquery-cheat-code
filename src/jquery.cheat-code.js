@@ -1,17 +1,17 @@
 /* --------------------------------------------------
-jQuery Cheat Code v1.02
+jQuery Cheat Code v1.03
 
 By Kevin Beronilla
 http://www.kevinberonilla.com
 
 Fork on GitHub
-https://github.com/kevinberonilla/jquery-cheatcode
+https://github.com/kevinberonilla/jquery-cheat-code
 
 Free to use under the MIT license
 http://www.opensource.org/licenses/mit-license.php
 -------------------------------------------------- */
 (function($) { // Protect the $ alias (IIF)
-    $.fn.cheatcode = function(options) {
+    $.fn.cheatCode = function(options) {
         var timer,
             input = '',
             settings = $.extend({ // Extend the default settings established below
