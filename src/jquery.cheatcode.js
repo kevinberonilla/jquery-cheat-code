@@ -6,6 +6,9 @@ http://www.kevinberonilla.com
 
 Fork on GitHub
 https://github.com/kevinberonilla/jquery-cheatcode
+
+Free to use under the MIT license
+http://www.opensource.org/licenses/mit-license.php
 -------------------------------------------------- */
 (function($) { // Protect the $ alias (IIF)
     $.fn.cheatcode = function(options) {
