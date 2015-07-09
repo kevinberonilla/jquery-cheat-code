@@ -10,28 +10,29 @@ jQuery 1.2.6 or higher
 ---
 
 #### Installation
-Copy the provided JS files to your site and include them in the `<head>` tag after jQuery
-```
+Copy the provided JS files to your site and include them in the `<head>` tag after jQuery.
+```html
 <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="js/jquery-cheatcode.min.js"></script>
+    <script src="js/jquery-cheat-code.min.js"></script>
 </head>
 ```
 
 ---
 
 #### Call the Script
-```
+```javascript
 $(document).ready(function() {
-    $(document).cheatcode();
+    $(document).cheatCode();
 });
 ```
+
 ---
 
 #### Play with Settings
-```
+```javascript
 $(document).ready(function() {
-    $(document).cheatcode({
+    $(document).cheatCode({
         code: '38384040373937396665',
         time: 500,
         callback: function() { alert('Invincibility enabled!'); }
