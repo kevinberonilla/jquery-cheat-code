@@ -2,6 +2,8 @@
 <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Konami_Code.svg/800px-Konami_Code.svg.png" style="width: 100%; height: auto;">  
 Add a keypress cheat code that calls a specified function on your website.
 
+See it in action here: <a href="http://kevinberonilla.com/demos/jquery-cheat-code">kevinberonilla.com/demos/jquery-cheat-code</a>
+
 ---
 
 #### Requirements
