@@ -32,7 +32,7 @@ $(document).ready(function() {
 #### Play with Settings
 ```javascript
 $(document).ready(function() {
-    $(document).cheatCode({
+    $(document).cheatCode({ // Default values below
         code: '38384040373937396665',
         time: 500,
         callback: function() { alert('Invincibility enabled!'); }
