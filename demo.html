@@ -1,0 +1,195 @@
+<!doctype html>
+<html>
+    <head>
+        <meta name="robots" content="noindex, nofollow">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>jQuery Cheat Code | Demo</title>
+        <link href="http://fonts.googleapis.com/css?family=PT+Mono|Source+Sans+Pro:400,700" rel="stylesheet" type="text/css">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <style>
+            /* ----------------------------------------
+            Demo-Specific Styles
+            ---------------------------------------- */
+            * {
+                box-sizing: border-box;
+                padding: 0;
+                margin: 0;
+            }
+            html, body {
+                width: 100%;
+                height: 100%;
+                padding: 0;
+                margin: 0;
+            }
+            body {
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+                -ms-text-size-adjust: 100%;
+                -webkit-text-size-adjust: 100%;
+                color: #1e1e1e;
+                font-family: 'Source Sans Pro', sans-serif;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+            }
+            pre {
+                font-family: 'PT Mono', monospace;
+                font-size: 20px;
+                line-height: 26px;
+                display: block;
+                max-width: 600px;
+                padding: 20px 24px;
+                margin: 0 auto;
+                overflow: auto;
+                background-color: #f8f5f0;
+                border-radius: 3px;
+            }
+            h2 {
+                font-size: 24px;
+                max-width: 600px;
+                text-align: center;
+                margin: 40px auto;
+            }
+            .container {
+                width: 100%;
+                padding: 0 40px;
+                position: relative;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+            .kitten {
+                display: none;
+                margin: 0 auto;
+                max-width: 400px;
+                height: auto;
+            }
+            @media only screen and (max-width: 768px) {
+                pre {
+                    font-size: 16px;
+                    line-height: 22px;
+                }
+                h2 {
+                    font-size: 18px;
+                }
+            }
+            @media only screen and (max-width: 480px) {
+                pre {
+                    font-size: 10px;
+                    line-height: 16px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <pre>
+                $(document).ready(function() {
+                    function showKitten() {
+                        $('.kitten').slideDown(500);
+                    };
+                    
+                    $(document).cheatCode({
+                        code: '38383940',
+                        time: 500,
+                        callback: showKitten
+                    });
+                });
+            </pre>
+            <h2>Press <span class="fa fa-chevron-circle-up"></span> <span class="fa fa-chevron-circle-up"></span> <span class="fa fa-chevron-circle-right"></span> <span class="fa fa-chevron-circle-down"></span> in quick succession to see a kitten.</h2>
+            <div class="kitten"><img src="http://placekitten.com/g/400/200"></div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="js/jquery.cheat-code.js"></script>
+        <script>
+            /* ----------------------------------------
+            prettyPre Plugin by Tim Medora
+            ---------------------------------------- */
+            (function( $ ) {
+                
+                $.fn.prettyPre = function( method ) {
+                    var defaults = {
+                        ignoreExpression: /\s/ // what should be ignored?
+                    };
+                    var methods = {
+                        init: function( options ) {
+                            this.each( function() {
+                                var context = $.extend( {}, defaults, options );
+                                var $obj = $( this );
+                                var usingInnerText = true;
+                                var text = $obj.get( 0 ).innerText;
+                                // some browsers support innerText...some don't...some ONLY work with innerText.
+                                if ( typeof text == "undefined" ) {
+                                    text = $obj.html();
+                                    usingInnerText = false;
+                                }
+                                // use the first line as a baseline for how many unwanted leading whitespace characters are present
+                                var superfluousSpaceCount = 0;
+                                var pos = 0;
+                                var currentChar = text.substring( 0, 1 );
+                                while ( context.ignoreExpression.test( currentChar ) ) {
+                                    if(currentChar !== "\n"){
+                                        superfluousSpaceCount++;
+                                    }else{
+                                        superfluousSpaceCount = 0;
+                                    }
+                                    currentChar = text.substring( ++pos, pos + 1 );
+                                }
+                                // split
+                                var parts = text.split( "\n" );
+                                var reformattedText = "";
+                                // reconstruct
+                                var length = parts.length;
+                                for ( var i = 0; i < length; i++ ) {
+                                    // remove leading whitespace (represented by an empty string)
+                                    if(i === 0 && parts[0]=== ""){
+                                        continue;   
+                                    }
+                                    // cleanup, and don't append a trailing newline if we are on the last line
+                                    reformattedText += parts[i].substring( superfluousSpaceCount ) + ( i == length - 1 ? "" : "\n" );
+                                }
+                                // modify original
+                                if ( usingInnerText ) {
+                                    $obj.get( 0 ).innerText = reformattedText;
+                                }
+                                else {
+                                    // This does not appear to execute code in any browser but the onus is on the developer to not 
+                                    // put raw input from a user anywhere on a page, even if it doesn't execute!
+                                    $obj.html( reformattedText );
+                                }
+                            } );
+                        }
+                    }
+                    if ( methods[method] ) {
+                        return methods[method].apply( this, Array.prototype.slice.call( arguments, 1 ) );
+                    }
+                    else if ( typeof method === "object" || !method ) {
+                        return methods.init.apply( this, arguments );
+                    }
+                    else {
+                        $.error( "Method " + method + " does not exist on jQuery.prettyPre." );
+                    }
+                }
+            } )( jQuery );
+            
+            $(document).ready(function() {
+                $('pre').prettyPre();
+            });
+            
+            /* ----------------------------------------
+            Demo-Specific Scripts
+            ---------------------------------------- */
+            $(document).ready(function() {
+                function showKitten() {
+                    $('.kitten').slideDown(500);
+                };
+                
+                $(document).cheatCode({
+                    code: '38383940',
+                    time: 500,
+                    callback: showKitten
+                });
+            });
+        </script>
+    </body>
+</html>
