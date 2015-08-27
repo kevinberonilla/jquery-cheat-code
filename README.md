@@ -12,7 +12,10 @@ jQuery 1.2.6 or higher
 ---
 
 #### Installation
-Copy the provided JS files to your site and include them in the `<head>` tag after jQuery.
+Download the plugin via Bower or manually copy the JS files to your site, then include them in the `<head>` tag after jQuery.
+```
+bower install jquery-cheat-code
+```
 ```html
 <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
