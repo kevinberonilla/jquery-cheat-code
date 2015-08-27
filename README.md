@@ -6,7 +6,7 @@ See it in action here: <a href="http://kevinberonilla.com/demos/jquery-cheat-cod
 
 ---
 
-#### Requirements
+#### Dependencies
 jQuery 1.2.6 or higher
 
 ---
