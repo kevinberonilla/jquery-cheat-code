@@ -31,7 +31,13 @@
                 font-weight: 400;
                 font-size: 16px;
                 line-height: 24px;
-                background-color: #ddd;
+                background: -moz-linear-gradient(top,  #f68b1f 0%, #d60040 100%); /* FF3.6+ */
+                background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f68b1f), color-stop(100%,#d60040)); /* Chrome,Safari4+ */
+                background: -webkit-linear-gradient(top,  #f68b1f 0%,#d60040 100%); /* Chrome10+,Safari5.1+ */
+                background: -o-linear-gradient(top,  #f68b1f 0%,#d60040 100%); /* Opera 11.10+ */
+                background: -ms-linear-gradient(top,  #f68b1f 0%,#d60040 100%); /* IE10+ */
+                background: linear-gradient(to bottom,  #f68b1f 0%,#d60040 100%); /* W3C */
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f68b1f', endColorstr='#d60040',GradientType=0 ); /* IE6-9 */
             }
             a, a:visited {
                 opacity: 1;
@@ -87,10 +93,9 @@
                 max-width: initial;
                 padding: 8px 14px 10px;
                 margin-top: 0;
-            }
-            nav a.button.inverse, nav a.button.inverse:visited {
-                border: 1px solid #f68b1f;
                 background-color: transparent;
+                font-weight: 300;
+                text-transform: none;
             }
             nav h1 {
                 color: #fff;
@@ -115,6 +120,7 @@
                 text-align: center;
                 margin: 0 auto 40px;
                 padding-top: 40px;
+                color: #f8f5f0;
             }
             .container {
                 width: 100%;
@@ -176,8 +182,8 @@
         <header>
             <a id="kb-logo" href="http://www.kevinberonilla.com" target="_blank"><img src="http://www.kevinberonilla.com/hosted/kb-logo-reversed.svg"></a>
             <nav>
-                <h1>jQuery Quick Modal</h1>
-                <a href="https://github.com/kevinberonilla/jquery-cheat-code" class="button inverse mobile-off" target="_blank">GitHub</a>
+                <h1>jQuery Cheat Code</h1>
+                <a href="https://github.com/kevinberonilla/jquery-cheat-code" class="button mobile-off" target="_blank">GitHub</a>
                 <a href="https://github.com/kevinberonilla/jquery-cheat-code/archive/master.zip" class="button mobile-off" download="jquery-cheat-code.zip">Download</a>
             </nav>
         </header>
