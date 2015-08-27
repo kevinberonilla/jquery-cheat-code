@@ -1,0 +1,26 @@
+{
+  "name": "jquery-cheat-code",
+  "version": "1.03",
+  "homepage": "https://github.com/kevinberonilla/jquery-cheat-code",
+  "authors": [
+    "Kevin Beronilla <kevin.beronilla@gmail.com>"
+  ],
+  "description": "Add a keypress cheat code that calls a specified function on your website.",
+  "main": "js/jquery-cheat-code.min.js",
+  "dependencies": {
+    "jquery": ">=1.2.6"
+  },
+  "keywords": [
+    "cheat",
+    "code",
+    "konami"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
