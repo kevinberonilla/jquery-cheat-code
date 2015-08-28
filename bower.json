@@ -6,7 +6,7 @@
     "Kevin Beronilla <kevin.beronilla@gmail.com>"
   ],
   "description": "Add a keypress cheat code that calls a specified function on your website.",
-  "main": "js/jquery-cheat-code.min.js",
+  "main": "js/jquery-cheat-code.js",
   "dependencies": {
     "jquery": ">=1.2.6"
   },
