@@ -38,14 +38,14 @@ $(document).ready(function() {
 ```javascript
 $(document).ready(function() {
     $(document).cheatCode({ // Default values below
-        code: '38384040373937396665',
+        code: 38384040373937396665,
         time: 500,
         callback: function() { alert('Invincibility enabled!'); }
     });
 });
 ```
 **code**  
-A string of key codes without spaces representing your cheat code (default value is the Konami code sans Start button)
+A combined set of key codes without spaces representing your cheat code (default value is the Konami code sans Start button; can be passed in as a number or string)
 
 **time**  
 The amount of time in milliseconds allowed between sequential key presses before the input is reset
@@ -55,5 +55,5 @@ The function that fires when the cheat code is successfully executed (can be a p
 
 ---
 
-#### Useful Tools
-You can use <a href="https://css-tricks.com/snippets/javascript/javascript-keycodes/">this page</a> to help you determine the key codes for your code string.
+#### Use the Code Generator
+Included with the plugin is a generator you can use to determine your code string.
