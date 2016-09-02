@@ -130,13 +130,19 @@
                 margin: 0 auto;
                 min-height: 64px;
                 position: relative;
+                overflow: hidden;
             }
             #user-input {
                 font-family: 'PT Mono', monospace;
                 font-size: 18px;
                 line-height: 22px;
-                text-align: center;
+                display: inline-block;
+                position: relative;
+                overflow: hidden;
                 opacity: 0.75;
+                left: 50%;
+                -webkit-transform: translateX(-50%);
+                transform: translateX(-50%);
                 -webkit-transition: all 350ms ease-in-out;
                 -moz-transition: all 350ms ease-in-out;
                 -ms-transition: all 350ms ease-in-out;
@@ -145,8 +151,8 @@
             }
             #user-input.final {
                 opacity: 1;
-                -webkit-transform: scale(1.25);
-                transform: scale(1.25);
+                -webkit-transform: translateX(-50%) scale(1.25);
+                transform: translateX(-50%) scale(1.25);
             }
             #input-container .timer {
                 display: block;

@@ -160,9 +160,13 @@
             .kitten {
                 display: none;
                 margin: 0 auto;
-                max-width: 400px;
+                max-width: 560px;
                 height: auto;
-                margin-bottom: 40px;
+                border-radius: 3px;
+                overflow: hidden;
+            }
+            .kitten img {
+                display: block;
             }
             @media only screen and (max-width: 768px) {
                 pre {
@@ -218,8 +222,8 @@
                     });
                 });
             </pre>
+            <div class="kitten"><img src="http://placekitten.com/g/560/304"></div>
             <h2>Press <span class="fa fa-chevron-circle-up"></span> <span class="fa fa-chevron-circle-up"></span> <span class="fa fa-chevron-circle-right"></span> <span class="fa fa-chevron-circle-down"></span> in quick succession to see a kitten.</h2>
-            <div class="kitten"><img src="http://placekitten.com/g/400/200"></div>
             <a href="code-generator.html" class="button">Key Code Generator</a>
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
