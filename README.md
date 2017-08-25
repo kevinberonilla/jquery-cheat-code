@@ -12,7 +12,7 @@ jQuery 1.2.6 or higher
 ---
 
 #### Installation
-Download the plugin via Bower or manually copy the JS files to your site, then include them in the `<head>` tag after jQuery.
+Download the plugin via Bower or manually copy the JS files to your site, then include them in the `<head>` tag.
 ```
 bower install jquery-cheat-code
 ```
@@ -44,14 +44,14 @@ $(document).ready(function() {
     });
 });
 ```
-**code**  
-A combined set of key codes without spaces representing your cheat code (default value is the Konami code sans Start button; can be passed in as a number or string)
+**`code`**  
+Number or string containing a combined set of key codes without spaces that represents your cheat code (default value is the Konami code sans Start button)
 
-**time**  
-The amount of time in milliseconds allowed between sequential key presses before the input is reset
+**`time`**  
+Number representing the amount of time in milliseconds allowed between sequential key presses before the input is reset
 
-**callback**   
-The function that fires when the cheat code is successfully executed (can be a pre-defined function within scope)
+**`callback`**   
+Function that fires when the cheat code is successfully executed
 
 ---
 

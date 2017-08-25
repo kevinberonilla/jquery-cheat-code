@@ -1,5 +1,5 @@
 /* --------------------------------------------------
-jQuery Cheat Code v1.04
+jQuery Cheat Code v1.4.1
 
 By Kevin Beronilla
 http://www.kevinberonilla.com
@@ -11,6 +11,8 @@ Free to use under the MIT license
 http://www.opensource.org/licenses/mit-license.php
 -------------------------------------------------- */
 (function($) { // Protect the $ alias (IIF)
+    'use strict';
+    
     $.fn.cheatCode = function(options) {
         var timer,
             input = '',

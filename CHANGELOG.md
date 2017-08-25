@@ -1,5 +1,11 @@
 # jQuery Cheat Code
 
+#### v1.4.1 | August 25, 2017
+* Updated versioning to semantic style
+* The plugin now runs in strict mode
+
+---
+
 #### v1.03 | July 9, 2015
 * Renamed main function to use camelCase
 * Fixed an issue where callbacks were not being extended
