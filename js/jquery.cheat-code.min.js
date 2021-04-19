@@ -2,7 +2,7 @@
 jQuery Cheat Code v1.4.1
 
 By Kevin Beronilla
-http://www.kevinberonilla.com
+https://kevinberonilla.com
 
 Fork on GitHub
 https://github.com/kevinberonilla/jquery-cheat-code
